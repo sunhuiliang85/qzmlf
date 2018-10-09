@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: server-uxz
+  profiles:
+    active: local
+  #http encoding
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  #jpa 仅用于表结构映射
+  jpa:
+      database: mysql
+      hibernate:
+        ddl-auto: update
+mybatis:
+  type-aliases-package: com.uxz.uc.domain
+  mapper-locations: classpath:/wrapper/*
+  configuration:
+    mapUnderscoreToCamelCase: true
+logging:
+  level:
+   com.hzx.uc.dao :
+    debug
+

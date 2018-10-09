@@ -1,0 +1,18 @@
+server:
+  port: 8092
+
+spring:
+  #DataBase
+  datasource:
+    url: jdbc:mysql://39.106.179.161:3306/uxz?allowMultiQueries=true&autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: shl26665764
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 39.106.179.161
+    port: 6378
+    password:
+  # database: 6
+#default:
+ #  rule:
+  #   id: 10086
